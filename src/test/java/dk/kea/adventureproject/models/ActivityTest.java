@@ -7,21 +7,22 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class ActivityTest {
 
-    /**
-     * @author Joachim
-     * @author Christian
-     */
-
     @Test
     void Activity() {
 
-        Activity activity = new Activity(1, "Sumo", 18, 150, 100, "Socks");
+        Activity activity = new Activity();
 
+        activity.setAgeLimit(18);
+        activity.setHeightLimit(140);
+        activity.setActivityID(1);
+        activity.setActivityName("Sumo");
+        activity.setTimeLimit(2);
+        activity.setDescription("Test");
         assertEquals(18, activity.getAgeLimit());
-        assertEquals(150, activity.getHeightLimit());
+        assertEquals(140, activity.getHeightLimit());
         assertEquals(1, activity.getActivityID());
         assertEquals("Sumo", activity.getActivityName());
-        assertEquals(100, activity.getTimeLimit());
-        assertEquals("Socks", activity.getDescription());
+        assertEquals(2, activity.getTimeLimit());
+        assertEquals("Test", activity.getDescription());
     }
 }

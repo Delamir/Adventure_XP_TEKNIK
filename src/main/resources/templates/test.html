@@ -2,15 +2,15 @@
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head th:replace="templates/head.html(customCSS='style.css')"></head>
 <header>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-    $(document).ready(function () {
-        $("button").click(function () {
-            var name = $("input:text").val();
-            document.getElementById("showName").innerHTML = name;
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                var name = $("input:text").val();
+                document.getElementById("showName").innerHTML = name;
+            });
         });
-    });
-</script>
+    </script>
 
 
 <p>Indtast navn på dagens medarbejder:

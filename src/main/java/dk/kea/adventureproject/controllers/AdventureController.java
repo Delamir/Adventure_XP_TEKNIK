@@ -61,9 +61,7 @@ public class AdventureController {
 
 
     @GetMapping("/test")
-    public String renderTest(Model model) {
-        List<Activity> list = activityService.readAllActivities();
-        model.addAttribute("list", list);
-        return "test.html";
+    public String renderTest() {
+        return "/test";
     }
 }
